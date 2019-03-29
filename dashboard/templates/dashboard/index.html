@@ -1,0 +1,23 @@
+﻿{% load static %}
+       {% include 'dashboard/css_layout.html' %}
+        {% include 'dashboard/navbar.html' %}
+        <!-- /navbar -->
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        {% include 'dashboard/sidebar.html' %}
+                        </div>
+                    <!--/.span3-->
+                    {% block maincontent %}
+                    {% endblock maincontent %}
+                    <!--/.span9-->
+                </div>
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.wrapper-->
+       {% include 'dashboard/footer.html' %}
+
+       {% include 'dashboard/script_layout.html' %}
+        
